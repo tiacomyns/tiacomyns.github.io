@@ -4,8 +4,8 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  /* Change favorite color */
   --hue-color: 345;
+  --night-mode-hue-colour: 250;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -32,7 +32,7 @@
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-  /*========== Margenes Bottom ==========*/
+  /*========== Margines Bottom ==========*/
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -62,14 +62,14 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   /* HSL color mode */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: hsl(var(--hue-color), 29%, 16%);
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --first-color-second: hsl(var(--night-mode-hue-colour), 30%, 8%);
+  --title-color: hsl(var(--night-mode-hue-colour), 8%, 95%);
+  --text-color: hsl(var(--night-mode-hue-colour), 8%, 75%);
+  --input-color: hsl(var(--night-mode-hue-colour), 29%, 16%);
+  --body-color: hsl(var(--night-mode-hue-colour), 20%, 12%);
+  --container-color: hsl(var(--night-mode-hue-colour), 29%, 16%);
+  --scroll-bar-color: hsl(var(--night-mode-hue-colour), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--night-mode-hue-colour), 12%, 36%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -1267,14 +1267,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/*
-.instagram-media {
-  border-radius: 1em;
-  padding: 1em;
-  position: relative;
+
+.centre__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  top: 50%;
-  left: 15%;
-  right: 25%;
 }
-*/
