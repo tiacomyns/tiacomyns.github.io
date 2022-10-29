@@ -1274,3 +1274,10 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
+.centre__igcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
